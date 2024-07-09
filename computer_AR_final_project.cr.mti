@@ -1,4 +1,4 @@
-C:/Users/moien/Documents/KNTU/computer_ARC/CPU/ALU_von.v {1 {vlog -work work -vopt -stats=none {C:\Users\moien\Documents\KNTU\computer_ARC\CPU\ALU_von.v}
+C:/Users/moien/Documents/KNTU/computer_ARC/CPU/ALU_von.v {1 {vlog -work work -vopt -stats=none C:/Users/moien/Documents/KNTU/computer_ARC/CPU/ALU_von.v
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 -- Compiling module ALU_von
 

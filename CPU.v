@@ -45,7 +45,6 @@ module CPU;
     );
 
     Control_Unit control_unit_inst (
-        .clk(clock),
         .T(out_sequence_counter),
         .IR(out_IR),
         .load_AR(load_AR),
@@ -97,7 +96,7 @@ module CPU;
         .value(out_DR)
     );
     reg_8b_von AC (
-        .data_in(out_Bus),
+        .data_in(out_ALU),
         .clk(clock),
         .load(load_AC),
         .inc(inc_AC),

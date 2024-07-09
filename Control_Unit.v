@@ -1,5 +1,4 @@
 module Control_Unit (
-    input clk,
     input [7:0] T, // sequence
     input [7:0] IR,
     
@@ -67,26 +66,26 @@ module Control_Unit (
         alu_enable = 0;
         alu_mode = 3'b000;
 
-        if (T[0]) begin
+        if (T[1]) begin
             bus_selectors = 2;
             load_AR = 1;
-        end else if (T[1]) begin
+        end else if (T[2]) begin
             bus_selectors = 3'b111;
             inc_PC = 1;
             memory_read = 1;
             memory_write = 0;
             load_IR = 1;
-        end else if (T[2]) begin
+        end else if (T[3]) begin
             opcode = IR[6:4];
             bus_selectors = 3'b101;
             load_AR = 1;
             immediate = IR[7];
-        end else if (T[3]) begin
+        end else if (T[4]) begin
             if (immediate) begin
                 bus_selectors = 3'b111;
                 load_AR = 1;
             end
-        end else if (T[4]) begin
+        end else if (T[5]) begin
             bus_selectors = 3'b111;
             load_DR = 1;
             if (opcode == 3'b101) begin
@@ -94,10 +93,11 @@ module Control_Unit (
                 memory_read = 0;
                 memory_write = 1;
             end
-        end else if (T[5]) begin
+        end else if (T[6]) begin
             alu_mode = opcode;
             alu_enable = 1;
-        end else begin
+        end else if (T[7]) begin
+            load_AC = 1;
             seq_counter_RESET = 1;
         end
     end
