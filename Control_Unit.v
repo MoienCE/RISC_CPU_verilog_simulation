@@ -68,13 +68,13 @@ module Control_Unit (
         alu_mode = 3'b000;
 
         if (reset) begin
-            sequence_counter <= 0;
+            sequence_counter = 0;
         end else begin
             case (sequence_counter)
                 0: begin
                     bus_selectors = 3'b010; // 2 in binary
                     load_AR = 1;
-                    sequence_counter <= sequence_counter + 1;
+                    sequence_counter = sequence_counter + 1;
                 end
                 1: begin
                     bus_selectors = 3'b111;
@@ -82,43 +82,43 @@ module Control_Unit (
                     memory_read = 1;
                     memory_write = 0;
                     load_IR = 1;
-                    sequence_counter <= sequence_counter + 1;
+                    sequence_counter = sequence_counter + 1;
                 end
                 2: begin
                     opcode = IR[6:4];
                     bus_selectors = 3'b101;
                     load_AR = 1;
                     immediate = IR[7];
-                    sequence_counter <= sequence_counter + 1;
+                    sequence_counter = sequence_counter + 1;
                 end
                 3: begin
                     bus_selectors = 3'b111;
                     if (immediate) begin
                         load_AR = 1;
                     end
-                    sequence_counter <= sequence_counter + 1;
+                    sequence_counter = sequence_counter + 1;
                 end
                 4: begin
                     bus_selectors = 3'b111;
-                    load_DR = 1;
+                    load_DR <= 1; // Load DR immediately
                     if (opcode == 3'b101) begin
                         bus_selectors = 3'b100;
                         memory_read = 0;
                         memory_write = 1;
                     end
-                    sequence_counter <= sequence_counter + 1;
+                    sequence_counter = sequence_counter + 1;
                 end
                 5: begin
                     alu_mode = opcode;
                     alu_enable = 1;
-                    sequence_counter <= sequence_counter + 1;
+                    sequence_counter = sequence_counter + 1;
                 end
                 6: begin
                     load_AC = 1;
-                    sequence_counter <= 0;
+                    sequence_counter = 0;
                 end
                 default: begin
-                    sequence_counter <= 0;
+                    sequence_counter = 0;
                 end
             endcase
         end
