@@ -6,8 +6,8 @@ module reg_4b_von (data_in, clk, load, inc, clear, value);
     output reg [3:0] value;
 
     initial value = 4'b0000;
-
-    always @(posedge clk) begin
+    
+    always @(posedge clk or posedge clear) begin
     if (load) begin
         value <= data_in;
     end else if (inc) begin
