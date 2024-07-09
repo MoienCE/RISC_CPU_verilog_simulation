@@ -15,7 +15,7 @@ module ALU_von (
     // 101 ---- Store the value of specific register to the operand of instruction 
     // 110 ---- Two’s complement the operand of instruction
 
-    always@(activate)
+    always@(posedge activate)
     begin
         case (mode)
             3'b000: begin

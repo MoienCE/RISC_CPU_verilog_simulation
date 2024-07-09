@@ -104,9 +104,9 @@ module Control_Unit (
                 5: begin
                     alu_mode = opcode;
                     alu_enable = 1;
+                    load_AC = 1;
                 end
                 6: begin
-                    load_AC = 1;
                 end
                 default: begin
                 end
