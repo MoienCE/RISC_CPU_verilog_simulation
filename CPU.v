@@ -130,8 +130,7 @@ module CPU;
     );
     
     initial begin
-        clock = 0;
-        
+        clock = 1;
     end
     always #10 clock = ~clock;
 

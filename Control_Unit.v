@@ -34,7 +34,7 @@ module Control_Unit (
     reg [2:0] opcode;
     reg immediate;
 
-    always @(posedge clk) begin
+    always @(*) begin
         seq_counter_RESET = 0;
 
         opcode = 3'b000;
