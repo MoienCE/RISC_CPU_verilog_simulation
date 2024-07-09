@@ -1,17 +1,17 @@
 module CPU;
     reg clock;
+    reg reset_CU;
 
     wire load_AC, load_AR, load_DR, load_IR, load_PC, load_TR;
     wire clear_AC, clear_AR, clear_DR, clear_PC, clear_TR;
     wire inc_AC, inc_AR, inc_DR, inc_PC, inc_TR;
-    wire seq_counter_RESET;
     wire memory_read;
     wire memory_write;
     wire [2:0] bus_selectors;
     wire alu_enable;
     wire [2:0] alu_mode;
 
-    wire [7:0] out_Bus, out_Memory, out_DR, out_AC, out_IR, out_TR, out_ALU, X_DATA, out_sequence_counter;
+    wire [7:0] out_Bus, out_Memory, out_DR, out_AC, out_IR, out_TR, out_ALU, X_DATA;
     wire [3:0] out_AR, out_PC;
     wire out_E_ALU;
 
@@ -38,15 +38,10 @@ module CPU;
         .out(out_Bus)
     );
 
-    seq_counter_to_decoder sequence_counter (
-        .clk(clock),
-        .reset(seq_counter_RESET),
-        .decoded_count(out_sequence_counter)
-    );
-
     Control_Unit control_unit_inst (
-        .T(out_sequence_counter),
         .IR(out_IR),
+        .clock(clock),
+        .reset(reset_CU),
         .load_AR(load_AR),
         .load_PC(load_PC),
         .load_DR(load_DR),
@@ -63,7 +58,6 @@ module CPU;
         .inc_DR(inc_DR),
         .inc_AC(inc_AC),
         .inc_TR(inc_TR),
-        .seq_counter_RESET(seq_counter_RESET),
         .memory_read(memory_read),
         .memory_write(memory_write),
         .bus_selectors(bus_selectors),
@@ -129,6 +123,7 @@ module CPU;
     );
     
     initial begin
+        reset_CU = 0;
         clock = 1;
     end
     always #10 clock = ~clock;

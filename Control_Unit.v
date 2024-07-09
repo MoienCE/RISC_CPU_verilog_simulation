@@ -1,6 +1,7 @@
 module Control_Unit (
-    input [7:0] T, // sequence
     input [7:0] IR,
+    input clock,
+    input reset,
     
     output reg load_AR, 
     output reg load_PC, 
@@ -21,7 +22,6 @@ module Control_Unit (
     output reg inc_AC, 
     output reg inc_TR,
     
-    output reg seq_counter_RESET,
     output reg memory_read,
     output reg memory_write,
     output reg [2:0] bus_selectors,
@@ -29,16 +29,17 @@ module Control_Unit (
     output reg [2:0] alu_mode
 );
 
-
+    reg [3:0] sequence_counter;
     reg [2:0] opcode;
     reg immediate;
 
-    always @(*) begin
-        seq_counter_RESET = 0;
+    initial begin
+        sequence_counter = 0;
+    end
 
-        opcode = 3'b000;
-        immediate = 0;
-
+    always @(posedge clock or posedge reset) begin
+        
+        // Reset all control signals
         load_AR = 0;
         load_PC = 0;
         load_DR = 0;
@@ -58,47 +59,68 @@ module Control_Unit (
         inc_AC = 0;
         inc_TR = 0;
 
-        memory_read = 0;
+        memory_read = 1;
         memory_write = 0;
 
-        bus_selectors = 3'b000;
+        bus_selectors = 3'b111;
 
         alu_enable = 0;
         alu_mode = 3'b000;
 
-        if (T[1]) begin
-            bus_selectors = 2;
-            load_AR = 1;
-        end else if (T[2]) begin
-            bus_selectors = 3'b111;
-            inc_PC = 1;
-            memory_read = 1;
-            memory_write = 0;
-            load_IR = 1;
-        end else if (T[3]) begin
-            opcode = IR[6:4];
-            bus_selectors = 3'b101;
-            load_AR = 1;
-            immediate = IR[7];
-        end else if (T[4]) begin
-            if (immediate) begin
-                bus_selectors = 3'b111;
-                load_AR = 1;
-            end
-        end else if (T[5]) begin
-            bus_selectors = 3'b111;
-            load_DR = 1;
-            if (opcode == 3'b101) begin
-                bus_selectors = 3'b100;
-                memory_read = 0;
-                memory_write = 1;
-            end
-        end else if (T[6]) begin
-            alu_mode = opcode;
-            alu_enable = 1;
-        end else if (T[7]) begin
-            load_AC = 1;
-            seq_counter_RESET = 1;
+        if (reset) begin
+            sequence_counter <= 0;
+        end else begin
+            case (sequence_counter)
+                0: begin
+                    bus_selectors = 3'b010; // 2 in binary
+                    load_AR = 1;
+                    sequence_counter <= sequence_counter + 1;
+                end
+                1: begin
+                    bus_selectors = 3'b111;
+                    inc_PC = 1;
+                    memory_read = 1;
+                    memory_write = 0;
+                    load_IR = 1;
+                    sequence_counter <= sequence_counter + 1;
+                end
+                2: begin
+                    opcode = IR[6:4];
+                    bus_selectors = 3'b101;
+                    load_AR = 1;
+                    immediate = IR[7];
+                    sequence_counter <= sequence_counter + 1;
+                end
+                3: begin
+                    bus_selectors = 3'b111;
+                    if (immediate) begin
+                        load_AR = 1;
+                    end
+                    sequence_counter <= sequence_counter + 1;
+                end
+                4: begin
+                    bus_selectors = 3'b111;
+                    load_DR = 1;
+                    if (opcode == 3'b101) begin
+                        bus_selectors = 3'b100;
+                        memory_read = 0;
+                        memory_write = 1;
+                    end
+                    sequence_counter <= sequence_counter + 1;
+                end
+                5: begin
+                    alu_mode = opcode;
+                    alu_enable = 1;
+                    sequence_counter <= sequence_counter + 1;
+                end
+                6: begin
+                    load_AC = 1;
+                    sequence_counter <= 0;
+                end
+                default: begin
+                    sequence_counter <= 0;
+                end
+            endcase
         end
     end
 
