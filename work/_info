@@ -1,0 +1,439 @@
+m255
+K4
+z2
+!s11f vlog 2020.4 2020.10, Oct 13 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/moien/Documents/ModelSim/ex_KNTU_01/Priority Encoder 4 to 2
+T_opt
+!s110 1720511966
+Vc2Id4Pd<bcC?A3Z6YPGC;3
+Z1 04 25 4 work seq_counter_to_decoder_tb fast 0
+=1-e00af69b7b4f-668cedde-27b-5e34
+Z2 o-quiet -auto_acc_if_foreign -work work +acc
+Z3 tCvgOpt 0
+n@_opt
+Z4 OL;O;2020.4;71
+R0
+T_opt1
+!s110 1720523836
+V9Q2_IP2oi^KRARP1NV6L41
+04 3 4 work CPU fast 0
+=1-e00af69b7b4f-668d1c3c-57-5ec8
+R2
+R3
+n@_opt1
+R4
+T_opt2
+!s110 1719600349
+VST?F`o;U:cDRohPC0gjbM0
+R1
+=1-e00af69b7b4f-667f04dd-e7-58e4
+R2
+R3
+n@_opt2
+R4
+R0
+vALU_von
+Z5 !s110 1720523830
+!i10b 1
+!s100 aNHj3AHP`gYSDS2A=@5:M3
+Z6 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Ioe4ETfW2`M=ciAM1nWR]03
+Z7 dC:/Users/moien/Documents/KNTU/computer_ARC/CPU
+w1720511094
+8C:\Users\moien\Documents\KNTU\computer_ARC\CPU\ALU_von.v
+FC:\Users\moien\Documents\KNTU\computer_ARC\CPU\ALU_von.v
+!i122 999
+Z8 L0 1 45
+Z9 VDg1SIo80bB@j0V0VzS_@n1
+Z10 OL;L;2020.4;71
+r1
+!s85 0
+31
+Z11 !s108 1720523830.000000
+!s107 C:\Users\moien\Documents\KNTU\computer_ARC\CPU\ALU_von.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:\Users\moien\Documents\KNTU\computer_ARC\CPU\ALU_von.v|
+!i113 0
+Z12 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R3
+n@a@l@u_von
+vBUS
+R5
+!i10b 1
+!s100 QMFjOjJnYG4TCYK@<k?Wk0
+R6
+I8H^]g0JCgTo4B3k_ed^f60
+R7
+w1719642643
+8C:/Users/moien/Documents/KNTU/computer_ARC/CPU/BUS.v
+FC:/Users/moien/Documents/KNTU/computer_ARC/CPU/BUS.v
+!i122 990
+L0 1 24
+R9
+R10
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/moien/Documents/KNTU/computer_ARC/CPU/BUS.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/moien/Documents/KNTU/computer_ARC/CPU/BUS.v|
+!i113 0
+R12
+R3
+n@b@u@s
+vBUS_TB
+R5
+!i10b 1
+!s100 X9zD_m26IGY7aXdbYHPE71
+R6
+I9^WLcJB7Nd_28`=bFOgRN3
+R7
+w1719642641
+Z13 8C:/Users/moien/Documents/KNTU/computer_ARC/CPU/BUS_TB.v
+Z14 FC:/Users/moien/Documents/KNTU/computer_ARC/CPU/BUS_TB.v
+!i122 991
+Z15 L0 1 54
+R9
+R10
+r1
+!s85 0
+31
+R11
+Z16 !s107 C:/Users/moien/Documents/KNTU/computer_ARC/CPU/BUS_TB.v|
+Z17 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/moien/Documents/KNTU/computer_ARC/CPU/BUS_TB.v|
+!i113 0
+R12
+R3
+n@b@u@s_@t@b
+vControl_Unit
+R5
+!i10b 1
+!s100 CUahodzRe_L9]TWjokh>?1
+R6
+I2QW2iOKZihSU@kU4A==gi1
+R7
+w1720523680
+8C:/Users/moien/Documents/KNTU/computer_ARC/CPU/Control_Unit.v
+FC:/Users/moien/Documents/KNTU/computer_ARC/CPU/Control_Unit.v
+!i122 1001
+L0 1 105
+R9
+R10
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/moien/Documents/KNTU/computer_ARC/CPU/Control_Unit.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/moien/Documents/KNTU/computer_ARC/CPU/Control_Unit.v|
+!i113 0
+R12
+R3
+n@control_@unit
+vCPU
+R5
+!i10b 1
+!s100 6L<22T=AzYRlVDIOAF1[A2
+R6
+Ij@:fz@fCam2A54cMc@;M61
+R7
+w1720523827
+8C:/Users/moien/Documents/KNTU/computer_ARC/CPU/CPU.v
+FC:/Users/moien/Documents/KNTU/computer_ARC/CPU/CPU.v
+!i122 1002
+L0 1 138
+R9
+R10
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/moien/Documents/KNTU/computer_ARC/CPU/CPU.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/moien/Documents/KNTU/computer_ARC/CPU/CPU.v|
+!i113 0
+R12
+R3
+n@c@p@u
+vdecoder1to8
+R5
+!i10b 1
+!s100 Ui2?=9hInlBA6<h>XWdC93
+R6
+IX]?IVhMWZX;gZOV7I3QF20
+R7
+Z18 w1720511950
+Z19 8C:/Users/moien/Documents/KNTU/computer_ARC/CPU/seq_counter_to_decoder.v
+Z20 FC:/Users/moien/Documents/KNTU/computer_ARC/CPU/seq_counter_to_decoder.v
+!i122 992
+L0 31 15
+R9
+R10
+r1
+!s85 0
+31
+R11
+Z21 !s107 C:/Users/moien/Documents/KNTU/computer_ARC/CPU/seq_counter_to_decoder.v|
+Z22 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/moien/Documents/KNTU/computer_ARC/CPU/seq_counter_to_decoder.v|
+!i113 0
+R12
+R3
+vmemory_module
+R5
+!i10b 1
+!s100 0]EnLlU3MT=bAD5@=ReXE2
+R6
+ID?I=IfNgbf<z=FTBa7o_d2
+R7
+w1720523820
+8C:/Users/moien/Documents/KNTU/computer_ARC/CPU/memory_module.v
+FC:/Users/moien/Documents/KNTU/computer_ARC/CPU/memory_module.v
+!i122 994
+Z23 L0 1 27
+R9
+R10
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/moien/Documents/KNTU/computer_ARC/CPU/memory_module.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/moien/Documents/KNTU/computer_ARC/CPU/memory_module.v|
+!i113 0
+R12
+R3
+vmemory_module_tb
+R5
+!i10b 1
+!s100 b8Bl6DiWle0d`o6DZ0D2O3
+R6
+I:>5fhjc5<Hkj@nNd]LKOb1
+R7
+w1719642888
+8C:/Users/moien/Documents/KNTU/computer_ARC/CPU/memory_module_tb.v
+FC:/Users/moien/Documents/KNTU/computer_ARC/CPU/memory_module_tb.v
+!i122 995
+R8
+R9
+R10
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/moien/Documents/KNTU/computer_ARC/CPU/memory_module_tb.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/moien/Documents/KNTU/computer_ARC/CPU/memory_module_tb.v|
+!i113 0
+R12
+R3
+vmux8to1_16bit_tb
+!s110 1719593929
+!i10b 1
+!s100 jg=XW:`c7UIY?SNA4Mo0l2
+R6
+If2iNBeDlXf@VXVHJ2O4hi1
+R7
+w1719585968
+R13
+R14
+!i122 138
+R15
+R9
+R10
+r1
+!s85 0
+31
+!s108 1719593929.000000
+R16
+R17
+!i113 0
+R12
+R3
+vmux8to1_8bit_tb
+!s110 1719642613
+!i10b 1
+!s100 DAzG4j_`9X7CU3L75;l:G0
+R6
+II5=c7zY^;7b4e05dPNVY<1
+R7
+w1719597154
+R13
+R14
+!i122 467
+R15
+R9
+R10
+r1
+!s85 0
+31
+!s108 1719642613.000000
+R16
+R17
+!i113 0
+R12
+R3
+vreg_4b_von
+R5
+!i10b 1
+!s100 jf=O8i@U]H^fc7H06KlP83
+R6
+IEY9o_FdR74a4m^b^5?cZz0
+R7
+w1719646550
+8C:/Users/moien/Documents/KNTU/computer_ARC/CPU/reg_4b_von.v
+FC:/Users/moien/Documents/KNTU/computer_ARC/CPU/reg_4b_von.v
+!i122 998
+Z24 L0 1 20
+R9
+R10
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/moien/Documents/KNTU/computer_ARC/CPU/reg_4b_von.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/moien/Documents/KNTU/computer_ARC/CPU/reg_4b_von.v|
+!i113 0
+R12
+R3
+vreg_4b_von_TB
+R5
+!i10b 1
+!s100 ee_mjkbL3O<b6@dVfeRPZ3
+R6
+IiS<^CXg5kF:giRYNF6?iZ2
+R7
+w1719646812
+8C:/Users/moien/Documents/KNTU/computer_ARC/CPU/reg_4b_von_TB.v
+FC:/Users/moien/Documents/KNTU/computer_ARC/CPU/reg_4b_von_TB.v
+!i122 1000
+Z25 L0 1 43
+R9
+R10
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/moien/Documents/KNTU/computer_ARC/CPU/reg_4b_von_TB.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/moien/Documents/KNTU/computer_ARC/CPU/reg_4b_von_TB.v|
+!i113 0
+R12
+R3
+nreg_4b_von_@t@b
+vreg_8b_von
+R5
+!i10b 1
+!s100 C2:9bCBh71l`TD_c^?5k82
+R6
+I4JdF=A3dN0?I5<<55BbF]1
+R7
+w1719640080
+8C:/Users/moien/Documents/KNTU/computer_ARC/CPU/reg_8b_von.v
+FC:/Users/moien/Documents/KNTU/computer_ARC/CPU/reg_8b_von.v
+!i122 996
+R24
+R9
+R10
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/moien/Documents/KNTU/computer_ARC/CPU/reg_8b_von.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/moien/Documents/KNTU/computer_ARC/CPU/reg_8b_von.v|
+!i113 0
+R12
+R3
+vreg_8b_von_TB
+R5
+!i10b 1
+!s100 2A_KlOnozLoPlD8iELgJh3
+R6
+IbAH<?m_5B;fi]VCkXcZh52
+R7
+w1719640148
+8C:/Users/moien/Documents/KNTU/computer_ARC/CPU/reg_8b_von_TB.v
+FC:/Users/moien/Documents/KNTU/computer_ARC/CPU/reg_8b_von_TB.v
+!i122 997
+R25
+R9
+R10
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/moien/Documents/KNTU/computer_ARC/CPU/reg_8b_von_TB.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/moien/Documents/KNTU/computer_ARC/CPU/reg_8b_von_TB.v|
+!i113 0
+R12
+R3
+nreg_8b_von_@t@b
+vseq_counter_to_decoder
+R5
+!i10b 1
+!s100 R^?FjlR0<?e26CIiS3F@90
+R6
+IOSfYKjUMCM9CSNYeKF=eN3
+R7
+R18
+R19
+R20
+!i122 992
+R23
+R9
+R10
+r1
+!s85 0
+31
+R11
+R21
+R22
+!i113 0
+R12
+R3
+vseq_counter_to_decoder_tb
+R5
+!i10b 1
+!s100 9=7<2Wl:R2NO4=63_X7jn3
+R6
+IUaoUaOYm]ne?`je:[N:SP2
+R7
+w1720511952
+8C:/Users/moien/Documents/KNTU/computer_ARC/CPU/seq_counter_to_decoder_TB.v
+FC:/Users/moien/Documents/KNTU/computer_ARC/CPU/seq_counter_to_decoder_TB.v
+!i122 993
+L0 1 32
+R9
+R10
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/moien/Documents/KNTU/computer_ARC/CPU/seq_counter_to_decoder_TB.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/moien/Documents/KNTU/computer_ARC/CPU/seq_counter_to_decoder_TB.v|
+!i113 0
+R12
+R3
+vvon_Neumann_CU
+!s110 1719600619
+!i10b 1
+!s100 [a@UMSAM3XmM:`S5_F3^73
+R6
+InEaPb6051]P]I?KGh1U^b3
+R7
+w1719600613
+8C:/Users/moien/Documents/KNTU/computer_ARC/CPU/von_Neumann_CU.v
+FC:/Users/moien/Documents/KNTU/computer_ARC/CPU/von_Neumann_CU.v
+!i122 224
+L0 1 80
+R9
+R10
+r1
+!s85 0
+31
+!s108 1719600619.000000
+!s107 C:/Users/moien/Documents/KNTU/computer_ARC/CPU/von_Neumann_CU.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/moien/Documents/KNTU/computer_ARC/CPU/von_Neumann_CU.v|
+!i113 0
+R12
+R3
+nvon_@neumann_@c@u

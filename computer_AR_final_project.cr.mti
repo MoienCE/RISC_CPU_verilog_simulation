@@ -1,0 +1,87 @@
+C:/Users/moien/Documents/KNTU/computer_ARC/CPU/ALU_von.v {1 {vlog -work work -vopt -stats=none {C:\Users\moien\Documents\KNTU\computer_ARC\CPU\ALU_von.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module ALU_von
+
+Top level modules:
+	ALU_von
+
+} {} {}} C:/Users/moien/Documents/KNTU/computer_ARC/CPU/BUS_TB.v {2 {vlog -work work -vopt -stats=none C:/Users/moien/Documents/KNTU/computer_ARC/CPU/BUS_TB.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module BUS_TB
+** Warning: C:/Users/moien/Documents/KNTU/computer_ARC/CPU/BUS_TB.v(34): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+** Warning: C:/Users/moien/Documents/KNTU/computer_ARC/CPU/BUS_TB.v(35): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+** Warning: C:/Users/moien/Documents/KNTU/computer_ARC/CPU/BUS_TB.v(36): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+** Warning: C:/Users/moien/Documents/KNTU/computer_ARC/CPU/BUS_TB.v(37): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+** Warning: C:/Users/moien/Documents/KNTU/computer_ARC/CPU/BUS_TB.v(38): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+** Warning: C:/Users/moien/Documents/KNTU/computer_ARC/CPU/BUS_TB.v(39): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+** Warning: C:/Users/moien/Documents/KNTU/computer_ARC/CPU/BUS_TB.v(40): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+** Warning: C:/Users/moien/Documents/KNTU/computer_ARC/CPU/BUS_TB.v(41): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+
+Top level modules:
+	BUS_TB
+
+} {} {}} C:/Users/moien/Documents/KNTU/computer_ARC/CPU/Control_Unit.v {1 {vlog -work work -vopt -stats=none C:/Users/moien/Documents/KNTU/computer_ARC/CPU/Control_Unit.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module Control_Unit
+
+Top level modules:
+	Control_Unit
+
+} {} {}} C:/Users/moien/Documents/KNTU/computer_ARC/CPU/reg_4b_von_TB.v {1 {vlog -work work -vopt -stats=none C:/Users/moien/Documents/KNTU/computer_ARC/CPU/reg_4b_von_TB.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module reg_4b_von_TB
+
+Top level modules:
+	reg_4b_von_TB
+
+} {} {}} C:/Users/moien/Documents/KNTU/computer_ARC/CPU/seq_counter_to_decoder_TB.v {1 {vlog -work work -vopt -stats=none C:/Users/moien/Documents/KNTU/computer_ARC/CPU/seq_counter_to_decoder_TB.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module seq_counter_to_decoder_tb
+
+Top level modules:
+	seq_counter_to_decoder_tb
+
+} {} {}} C:/Users/moien/Documents/KNTU/computer_ARC/CPU/reg_4b_von.v {1 {vlog -work work -vopt -stats=none C:/Users/moien/Documents/KNTU/computer_ARC/CPU/reg_4b_von.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module reg_4b_von
+
+Top level modules:
+	reg_4b_von
+
+} {} {}} C:/Users/moien/Documents/KNTU/computer_ARC/CPU/reg_8b_von_TB.v {1 {vlog -work work -vopt -stats=none C:/Users/moien/Documents/KNTU/computer_ARC/CPU/reg_8b_von_TB.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module reg_8b_von_TB
+
+Top level modules:
+	reg_8b_von_TB
+
+} {} {}} C:/Users/moien/Documents/KNTU/computer_ARC/CPU/seq_counter_to_decoder.v {1 {vlog -work work -vopt -stats=none C:/Users/moien/Documents/KNTU/computer_ARC/CPU/seq_counter_to_decoder.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module seq_counter_to_decoder
+-- Compiling module decoder1to8
+
+Top level modules:
+	seq_counter_to_decoder
+
+} {} {}} C:/Users/moien/Documents/KNTU/computer_ARC/CPU/reg_8b_von.v {1 {vlog -work work -vopt -stats=none C:/Users/moien/Documents/KNTU/computer_ARC/CPU/reg_8b_von.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module reg_8b_von
+
+Top level modules:
+	reg_8b_von
+
+} {} {}} C:/Users/moien/Documents/KNTU/computer_ARC/CPU/BUS.v {1 {vlog -work work -vopt -stats=none C:/Users/moien/Documents/KNTU/computer_ARC/CPU/BUS.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module BUS
+
+Top level modules:
+	BUS
+
+} {} {}} C:/Users/moien/Documents/KNTU/computer_ARC/CPU/memory_module_tb.v {1 {vlog -work work -vopt -stats=none C:/Users/moien/Documents/KNTU/computer_ARC/CPU/memory_module_tb.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module memory_module_tb
+
+Top level modules:
+	memory_module_tb
+
+} {} {}}
