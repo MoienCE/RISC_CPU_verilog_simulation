@@ -70,11 +70,10 @@ module Control_Unit (
         if (1) begin
             case (sequence_counter)
                 0: begin
-                    bus_selectors = 3'b010; // 2 in binary
+                    bus_selectors = 3'b010;
                     load_AR = 1;
                 end
                 1: begin
-                    bus_selectors = 3'b111;
                     inc_PC = 1;
                     memory_read = 1;
                     memory_write = 0;
@@ -87,13 +86,12 @@ module Control_Unit (
                     immediate = IR[7];
                 end
                 3: begin
-                    bus_selectors = 3'b111;
                     if (immediate) begin
                         load_AR = 1;
                     end
+                    load_DR = 1; // Load DR immediately
                 end
                 4: begin
-                    bus_selectors = 3'b111;
                     load_DR = 1; // Load DR immediately
                     if (opcode == 3'b101) begin
                         bus_selectors = 3'b100;

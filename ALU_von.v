@@ -37,7 +37,7 @@ module ALU_von (
                 result <= ~AC + 1;
             end
             default: begin
-                result <= 0;
+                result <= result;
             end
         endcase
     end

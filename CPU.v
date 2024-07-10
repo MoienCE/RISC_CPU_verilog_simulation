@@ -125,9 +125,9 @@ module CPU;
     initial begin
         reset_CU = 0;
         clock = 0;
-        #35 
-        reset_CU = 1;
         #10
+        reset_CU = 1;
+        #100
         reset_CU = 0;
     end
     always #10 clock = ~clock;
