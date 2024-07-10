@@ -37,7 +37,7 @@ module ALU_von (
                 result <= DR;
             end
             3'b110: begin
-                result <= ~AC + 1;
+                result <= ~DR + 1;
             end
             default: begin
                 result <= result;
