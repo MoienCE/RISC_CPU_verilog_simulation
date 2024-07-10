@@ -27,13 +27,6 @@ Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 Top level modules:
 	Control_Unit
 
-} {} {}} C:/Users/moien/Documents/KNTU/computer_ARC/CPU/CPU.v {1 {vlog -work work -vopt -stats=none C:/Users/moien/Documents/KNTU/computer_ARC/CPU/CPU.v
-Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
--- Compiling module CPU
-
-Top level modules:
-	CPU
-
 } {} {}} C:/Users/moien/Documents/KNTU/computer_ARC/CPU/reg_4b_von_TB.v {1 {vlog -work work -vopt -stats=none C:/Users/moien/Documents/KNTU/computer_ARC/CPU/reg_4b_von_TB.v
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 -- Compiling module reg_4b_von_TB
@@ -55,12 +48,27 @@ Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 Top level modules:
 	reg_4b_von
 
+} {} {}} C:/Users/moien/Documents/KNTU/computer_ARC/CPU/memory_module.v {2 {vlog -work work -vopt -stats=none C:/Users/moien/Documents/KNTU/computer_ARC/CPU/memory_module.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module memory_module
+** Warning: C:/Users/moien/Documents/KNTU/computer_ARC/CPU/memory_module.v(33): (vlog-2182) 'memory' might be read before written in always_comb or always @* block.
+
+Top level modules:
+	memory_module
+
 } {} {}} C:/Users/moien/Documents/KNTU/computer_ARC/CPU/reg_8b_von_TB.v {1 {vlog -work work -vopt -stats=none C:/Users/moien/Documents/KNTU/computer_ARC/CPU/reg_8b_von_TB.v
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 -- Compiling module reg_8b_von_TB
 
 Top level modules:
 	reg_8b_von_TB
+
+} {} {}} C:/Users/moien/Documents/KNTU/computer_ARC/CPU/Computer.v {1 {vlog -work work -vopt -stats=none C:/Users/moien/Documents/KNTU/computer_ARC/CPU/Computer.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module Computer
+
+Top level modules:
+	Computer
 
 } {} {}} C:/Users/moien/Documents/KNTU/computer_ARC/CPU/seq_counter_to_decoder.v {1 {vlog -work work -vopt -stats=none C:/Users/moien/Documents/KNTU/computer_ARC/CPU/seq_counter_to_decoder.v
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020

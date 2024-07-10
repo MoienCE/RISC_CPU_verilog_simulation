@@ -30,6 +30,7 @@ module ALU_von (
 
     always@(posedge activate)
     begin
+        O <= 0;
         case (mode)
             3'b000: begin
                 O <= AC + DR;
@@ -53,9 +54,6 @@ module ALU_von (
                 O <= O;
             end
         endcase
-        // if (E) begin
-            
-        // end
     end
 
 endmodule

@@ -1,4 +1,4 @@
-module CPU;
+module Computer;
     reg clock;
     reg reset_CU;
 
