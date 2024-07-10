@@ -106,7 +106,13 @@ module Control_Unit (
                     load_AC = 1;
                 end
                 6: begin
+                    if (opcode != 3'b111) begin
+                        bus_selectors = 3'b100;
+                        memory_read = 0;
+                        memory_write = 1;
+                    end
                 end
+                7: begin end
                 default: begin
                 end
             endcase

@@ -14,35 +14,48 @@ module ALU_von (
     // 100 ---- Load the value of the operand of instruction to a specific register
     // 101 ---- Store the value of specific register to the operand of instruction 
     // 110 ---- Two’s complement the operand of instruction
+
+    reg [8:0] O;
     initial begin
+        O = 0;
         E = 0;
         result = 0;
     end
+    
+    always @(*) begin
+        E = O[8];
+        result = O[7:0];        
+    end
+
+
     always@(posedge activate)
     begin
         case (mode)
             3'b000: begin
-                result <= AC + DR;
+                O <= AC + DR;
             end
             3'b001: begin
-                result <= DR <<< 1;
+                O <= DR <<< 1;
             end
             3'b010: begin
-                result <= ~(AC^ DR);
+                O <= ~(AC^ DR);
             end
             3'b011: begin
-                result <= DR >> 1;
+                O <= DR >> 1;
             end
             3'b100: begin
-                result <= DR;
+                O <= DR;
             end
             3'b110: begin
-                result <= ~DR + 1;
+                O <= ~DR + 1;
             end
             default: begin
-                result <= result;
+                O <= O;
             end
         endcase
+        // if (E) begin
+            
+        // end
     end
 
 endmodule
