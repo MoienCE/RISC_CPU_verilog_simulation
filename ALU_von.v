@@ -14,7 +14,10 @@ module ALU_von (
     // 100 ---- Load the value of the operand of instruction to a specific register
     // 101 ---- Store the value of specific register to the operand of instruction 
     // 110 ---- Two’s complement the operand of instruction
-
+    initial begin
+        E = 0;
+        result = 0;
+    end
     always@(posedge activate)
     begin
         case (mode)
