@@ -9,9 +9,9 @@ module memory_module (
   reg [7:0] memory [15:0];
 
   initial begin
-    memory[0] = 8'b01001100;    // load M[c] to AC  ... 05 will be in AC
-    memory[1] = 8'b00101010;    // xnor M[a] with AC ... 05 xnor 08
-    memory[2] = 8'b01101010;    // 2's comp M[a]
+    memory[0] = 8'b01001100;
+    memory[1] = 8'b01011010;
+    memory[2] = 8'b01111010;
     memory[3] = 8'b01110000;
     memory[4] = 8'b01110000;
     memory[5] = 8'b01110000;
@@ -21,7 +21,7 @@ module memory_module (
     memory[9] = 8'b01110000;
     memory[10] = 8'b00001000;
     memory[11] = 8'b01110000;
-    memory[12] = 8'b00000101;
+    memory[12] = 8'b00001110;
     memory[13] = 8'b01110000;
     memory[14] = 8'b01110000;
     memory[15] = 8'b01110000;
