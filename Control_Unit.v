@@ -88,8 +88,9 @@ module Control_Unit (
                 3: begin
                     if (immediate) begin
                         load_AR = 1;
+                    end else begin
+                        load_DR = 1; // Load DR immediately
                     end
-                    load_DR = 1; // Load DR immediately
                 end
                 4: begin
                     load_DR = 1; // Load DR immediately

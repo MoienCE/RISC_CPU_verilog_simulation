@@ -9,7 +9,7 @@ module memory_module (
   reg [7:0] memory [15:0];
 
   initial begin
-    memory[0] = 8'b11001100;    // load M[M[4c]] to AC  ... 8 will be in AC
+    memory[0] = 8'b01001100;    // load M[M[4c]] to AC  ... 8 will be in AC
     memory[1] = 8'b00001010;    // add M[0a] with AC ... res will be 8 + 2 = 10
     memory[2] = 8'b01110000;    
     memory[3] = 8'b01110000;
